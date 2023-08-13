@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a=Number.parseInt(prompt("enter number"));
+
+			first=a%10;
+			second=Number.parseInt(a/10)%10;
+			third=Number.parseInt(a/100);
+
+		array=["One","Two","Three","Four","Five","Six","Seven","Eight","Nine"];
+
+		array1=["Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Ninghteen"];
+
+		array2=["Twenty","Thirty","Fourty","Fifty","Sixty","Seventy","eighty","Ninghty"];
+
+	if(third>=1){
+		document.write(array[third-1]+"Houndrerd");
+
+		if(second==1){
+			document.write(" "+array1[first]);
+		}
+		else{
+			document.write(" "+array2[second-2]);
+			document.write(" "+array[first-1]);
+
+		}
+
+	}
+	else if(second>=1){
+		if(second==1){
+			document.write(" "+array1[first]);
+		}
+		else{
+			document.write(" "+array2[second-2]);
+			document.write(" "+array[first-1]);
+		}
+	}
+	else{
+		document.write(" "+array[first-1]);
+	}
+
+	</script>
+</body>
+</html>

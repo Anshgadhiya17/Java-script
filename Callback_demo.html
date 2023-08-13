@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<input type="button" value="click me" onclick="printme1(printme2)">
+	<script type="text/javascript">
+		
+		function printme1(mycallback1) {
+			console.log("hello world");
+			mycallback1();
+		}
+
+		function printme2(mycallback1){
+			console.log("hello world 2");
+
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="arrayPush()"> push</button>
+	<button onclick="arrayPop()"> pop</button>
+	<button onclick="arrayShift()"> shift</button>
+	<button onclick="arrayUnShift()"> unshift</button>
+	<button onclick="arraysort1()"> sort in ascending</button>
+	<button onclick="arraysort2()"> sort in descending</button>
+	<button onclick="arraysplice()">splice</button>
+	<button onclick="arrayslice()">slice</button>
+	<script type="text/javascript">
+
+				let arr=new Array();
+
+		function arrayPush(){
+			let a=parseInt(prompt("enter element to push : "));
+			arr.push(a);
+			console.log(arr);
+		}
+		function arrayPop(){
+			arr.pop();
+			console.log(arr);
+		}
+		function arrayShift(){
+			arr.shift();
+			console.log(arr);
+		}
+		function arrayUnShift(){
+			let b=parseInt(prompt("enter element to unshift : "));
+			arr.unshift(b);
+			console.log(arr);
+		}
+
+		 function arraysort1(){
+			arr.sort((a,b)=>a-b)
+			console.log(arr);
+
+	 	}
+	 	function arraysort2(){
+			arr.sort((a,b)=>b-a)
+			console.log(arr);
+
+	 	}
+
+	 	function arraysplice(){
+	 		let x=prompt("enter index: ");
+	 		let y=prompt("how many elements: ");
+			arr.splice(x,y);
+			console.log(arr);
+		}
+
+		function arrayslice(){
+			let p=prompt("enter index: ");
+	 		let q=prompt("how many elements: ");
+			arr.slice(p,q);
+			console.log(arr);
+		}
+
+	
+		
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let a=parseInt(prompt("enter number:"));
+        let b=a;
+		let count=0;
+		while(a>0){
+			count=count*10+a%10;
+			a=parseInt(a/10);
+
+		}
+
+
+		if(count==b){
+			console.log("palindrome");
+		}
+		else{
+			console.log("not palindrome");
+		}
+
+	</script>
+
+</body>
+</html>

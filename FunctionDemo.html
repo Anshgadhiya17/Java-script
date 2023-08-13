@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="button" value="StartBG" onclick="startBG()">
+	<input type="button" value="StopBG" onclick="stopBG()">	
+	<input type="button" value="StartFG" onclick="startFG()">
+	<input type="button" value="StopFG" onclick="stopFG()">
+
+	<script type="text/javascript">
+
+		function myBG(){
+			r = Math.ceil(Math.random()*255);
+			g = Math.ceil(Math.random()*255);
+			b = Math.ceil(Math.random()*255);
+			document.body.style.background = "rgb("+r+","+g+","+b+")";
+		}
+
+		function startBG(){
+			 c = setInterval(myBG,200);
+		}
+
+		function stopBG(){
+			clearInterval(c);
+		}
+
+		function myFG(){
+			r = Math.ceil(Math.random()*255);
+			g = Math.ceil(Math.random()*255);
+			b = Math.ceil(Math.random()*255);
+			document.getElementById("para").style.color = "rgb("+r+","+g+","+b+")";
+		}
+
+		function startFG(){
+			 c2 = setInterval(myFG,500);
+		}
+
+		function stopFG(){
+			clearInterval(c2);
+		}
+
+	</script>
+	<p id="para" align="justify">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

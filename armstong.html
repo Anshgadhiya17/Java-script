@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n=parseInt(prompt("enter number: "));
+		let count=0,sum=0;
+		let temp=n,a;
+		let ans=n;
+	    while(n>0){
+	    	n=parseInt(n/10);
+	    	count++;
+		}
+		while(temp>0){
+			a=temp%10;
+			sum=sum+Math.pow(a,count);
+			temp=parseInt(temp/10);
+		}
+		if(ans==sum){
+			document.write("armstrong");
+		}
+		else{
+			document.write("not armstrong");
+
+		}
+
+	</script>
+
+</body>
+</html>

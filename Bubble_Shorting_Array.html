@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n=parseInt(prompt("enter n: "));
+		let a=new Array(n);
+		let flag=0;
+		for(let i=0;i<a.length;i++){
+			a[i]=parseInt(prompt("enter element: "));
+		}
+		for(i=0;i<n;i++){
+			flag=1;
+			for(j=0;j<n;j++){
+				if(a[j]>a[j+1]){
+					let temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+					flag=0
+				}
+			}
+			if(flag==1){
+					break;
+			}
+		}
+		
+
+			document.write(a);
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n=parseInt(prompt("enter n: "));
+		let a=new Array(n);
+		for(i=0;i<a.length;i++){
+			a[i]=parseInt(prompt("enter element: "));
+		}
+		let min=a[0];
+		let max=a[0];
+		for(let i=0;i<a.length;i++){
+			if(a[i]>max){
+				max=a[i];
+			}
+			if(a[i]<min){
+				min=a[i];
+			}
+		}
+		document.write(" max is "+max+" min is "+min);
+	</script>
+
+</body>
+</html>
